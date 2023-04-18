@@ -18,7 +18,8 @@ client.once('ready', async (client) => {
     console.log("ready");
     
     // step 2. scan for unverified people and verify them
-    setInterval(scanAndGive, 15_000, client);
+    // setInterval(scanAndGive, 15_000, client);
+    scanAndGive(client);
 
 })
 
