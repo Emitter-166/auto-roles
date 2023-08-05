@@ -39,7 +39,6 @@ const giveAutorolesToMember = async (member: GuildMember) => {
     try{
         for(const roleId of permaRoleIds){
             if(member.user.bot){
-                await member.roles.remove(roleId, 'autoroles')
                 return;
             }
             await member.roles.add(roleId, 'autoroles')
